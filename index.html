@@ -1,0 +1,267 @@
+<!DOCTYPE html> <html><head>
+        <title>Disco Mag!</title>
+<!--         fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&amp;family=Italiana&amp;family=Playfair+Display:ital,wght@0,400;0,800;1,800&amp;family=Racing+Sans+One&amp;display=swap" rel="stylesheet">
+    <style>html, body {
+	margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+	color: black;
+}
+/* nav bar styling */
+.navBar {
+ 	display: flex;
+    justify-content: space-between; 
+    padding: 5px 0px 5px 47vw; 
+    margin: 0;
+    border-bottom: 1px solid #D3D3D3;
+   
+}
+
+
+.companyName {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 30px;
+}
+.searchContainer {
+    display: flex;
+    align-items: center;
+}  
+
+.searchContainer > button {
+	margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.searchContainer > button:hover {
+    cursor: pointer;
+}
+
+.searchContainer > button:first-child {
+	background-color: #df7373;
+    color: white;
+}
+
+.navBar img {
+	width: 10px;
+}
+
+
+/* topics/genre styling */
+
+.topics ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.topics li {
+    list-style: none;
+    margin:10px;
+	font-size: 15px;
+}
+
+.topics a {
+	text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+}
+
+.topics a:hover {
+    color: #df7373;
+}
+
+/* article container */
+
+#fashion{
+	display:flex;
+    justify-content: space-evenly; 
+    margin: 0 80px;
+}
+
+#fashion h2 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; 
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+	
+}
+#fashion img {
+	width: 20vw;
+}
+
+#fashion hr {
+	width: 20vw;
+    margin: 8px 0 5px 0;
+}
+
+#firstColumn {
+	display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+#firstColumn > img {
+    width: 100%;
+}
+#firstColumn > p {
+	text-transform: uppercase;
+}
+
+#secondColumn {
+	margin: 50px;
+}
+
+
+.articleItem p {
+	width:20vw;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* beauty section */
+#beauty {
+	background-color: #000;
+    color: #fff;
+}
+
+.articleRow img {
+ 	height:300px;
+    
+/*     overflow: hidden; */
+/*     height: 300px;
+    object-fit: fill; */
+}
+/* topic titles */
+
+.topicTitle {
+	font-size: 6em;
+    font-style: oblique;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.topicTitle2 {
+	font-size: 6em;
+    font-style: oblique;
+    font-family: 'Playfair Display', serif;
+    letter-spacing:25px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    
+    background-color:#000;
+    color: #fff;
+}
+
+.topicTitle2:hover {
+	color: #000;
+    background-color: white;
+    
+} 
+
+.articleRow {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    overflow: auto;
+  	white-space: nowrap;
+}
+
+.articleRow img {
+	height: 400px;
+}
+
+.articleItem1 {
+    padding: 50px;
+	margin: 15px;
+    background: white;
+}
+
+</style></head>
+    <body>
+        <div class="navBar">
+            <h1 class="companyName"><a href="https://www.youtube.com/watch?v=5qap5aO4i9A">Disco Mag</a></h1>
+            <div class="searchContainer">
+                <button>Subscribe</button>
+                <button>Sign In</button>
+                <button><img src="https://cdn-icons-png.flaticon.com/512/149/149852.png"></button>
+            </div>
+        </div>
+        
+<!--         need a div for topics -->
+        <div class="topics">
+            <ul>
+                <li><a href="#fashion">Fashion</a></li>
+                <li><a href="#beauty">Beauty</a></li>
+                <li><a href="#lifestyle">Lifestyle</a></li>
+            </ul>
+        </div>
+        
+<!--         need a div for articles -->
+         <div class="articleContainer">
+             <div id="fashion">
+                 <div id="firstColumn">
+                     <h1 class="topicTitle">Fashion —</h1>
+                     <img src="https://fashionista.com/.image/t_share/MTg2OTI5NDAzMTM2MDU5Mjgw/christian-dior-haute-couture-spring-2022-collection.jpg">
+                     <h2>Look at this runway collection</h2>
+                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                     
+                 </div>
+                 <div id="secondColumn">
+                	 <div class="articleItem">
+                         <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F07%252F08%252Fdua-lipa.jpg&amp;q=85">
+                         <p>Dula Peep on the Red Carpet</p>
+                         <hr>
+                     </div>
+                     <div class="articleItem">
+                         <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F07%252F08%252Fdua-lipa.jpg&amp;q=85">
+                         <p>Dress Like a Boss: idk go girl!!!!!</p>
+                         <hr>
+                     </div>
+                     <div class="articleItem">
+                         <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F07%252F08%252Fdua-lipa.jpg&amp;q=85">
+                         <p>Some imfluencer just dropped this collection, and it's sold out.</p>
+                         <hr>
+                     </div>
+                 </div>
+             </div>
+             <div id="beauty">
+                  <h1 class="topicTitle2">Beauty</h1>
+                  <div class="articleRow">
+                      <div class="articleItem1">
+                          <img src="https://media.allure.com/photos/5e5962206554ca00087ad018/2:1/w_3000,h_1500,c_limit/Alexa%20Demie%20MAC%20campaign%20winged%20liner.jpgg">
+                      </div>
+                      <div class="articleItem1">
+                         <img src="https://www.arabnews.com/sites/default/files/2021/05/31/2643031-1640514922.jpg">
+                      </div> 
+                      <div class="articleItem1">
+                         <img src="https://behindthechair.com/wp-content/uploads/2021/09/emma-feat-image.jpg">
+                      </div> 
+                    
+                 </div>
+             </div>
+             <div id="lifestyle">
+             </div>
+        </div>    
+    
+
+</body></html>
